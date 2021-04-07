@@ -1,11 +1,12 @@
 import pytest
 import allure
-# from time import sleep
+from allure_commons.types import AttachmentType
 from selenium import webdriver
 # from selenium.common.exceptions import WebDriverException
 # from webdriver_manager.chrome import ChromeDriverManager
 
 
+@allure.severity(allure.severity_level.NORMAL)
 class TestContinentalHomePage:
 
     base_url = "https://alexandrularion.github.io/hotel-continental/"
@@ -19,6 +20,7 @@ class TestContinentalHomePage:
         assert "Continental" in driver.title
         driver.close()
 
+    @allure.severity(allure.severity_level.MINOR)
     def test_logo(self):
         self.driver = webdriver.Chrome()
         driver = self.driver
@@ -28,6 +30,7 @@ class TestContinentalHomePage:
         assert status
         driver.close()
 
+    @allure.severity(allure.severity_level.CRITICAL)
     def test_sign_in(self):
         self.driver = webdriver.Chrome()
         driver = self.driver
@@ -38,12 +41,12 @@ class TestContinentalHomePage:
         btn_sign_in.click()
 
         email = driver.find_element_by_id("email")
-        email.send_keys('example@gmail.com')
+        email.send_keys("example@gmail.com")
 
         psw = driver.find_element_by_id("psw")
-        psw.send_keys('example_password')
+        psw.send_keys("example_password")
 
-        sign_in = driver.find_element_by_class_name('registerbtn')
+        sign_in = driver.find_element_by_class_name("registerbtn")
         sign_in.click()
 
         title = self.driver.title
@@ -53,9 +56,7 @@ class TestContinentalHomePage:
             assert True
 
         else:
+            allure.attach(self.driver.get_screenshot_as_png(), name="Login_Test",
+                          attachment_type=AttachmentType.PNG)
             driver.close()
             assert False
-
-
-if __name__ == '__main__':
-    pass
