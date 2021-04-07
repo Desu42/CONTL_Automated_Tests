@@ -1,5 +1,5 @@
 # CONTL_Automated_Tests
-Automated testing scripts with selenium and pytest
+Automated testing scripts with selenium and pytest for Continental Hotel
 
 # Required installations
 - Java 8 or higher for Allure reports
@@ -14,7 +14,7 @@ Automated testing scripts with selenium and pytest
 - Rewrite all tests using POM design pattern
 - Use webdriver-manager python package to programmatically set up webdriver at runtime
 
-# How to use instructions
+# How to use 
 
 Use pytest
 - pytest -v -s CONTL_Website_Tests\CONTL_ ... - press tab for autocomplete
