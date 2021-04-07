@@ -1,5 +1,5 @@
 import allure
-from allure_commons.types import AttachmentType
+# from allure_commons.types import AttachmentType
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver import ActionChains
