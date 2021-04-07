@@ -20,7 +20,7 @@ Use pytest
 - pytest -v -s CONTL_Website_Tests\CONTL_ ... - press tab for autocomplete
 
 To generate allure reports
-
+- open terminal in IDE
 1. pytest -v -s --alluredir="[path]"CONTL_Website_Tests\CONTL_ ... - press tab for autocomplete
  [path] = Allure_Reports
 3. save report dir path, or open cmd in the directory with the report dir
