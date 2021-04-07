@@ -2,6 +2,7 @@ import allure
 # from allure_commons.types import AttachmentType
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver import ActionChains
 
 
 @allure.severity(allure.severity_level.NORMAL)
@@ -23,7 +24,8 @@ class TestContinentalAdminAddEmployee:
         employees_panel.click()
 
         add_employee_btn = driver.find_element_by_class_name("addEmployeeBtn")
-        add_employee_btn.click()
+        driver.implicitly_wait(3)
+        ActionChains(driver).move_to_element(add_employee_btn).click(add_employee_btn).perform()
 
         name = driver.find_element_by_id("names")
         name.send_keys("Florin Balan")
