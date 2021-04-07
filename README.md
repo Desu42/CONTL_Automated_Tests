@@ -22,6 +22,6 @@ Use pytest
 To generate allure reports
 
 1. pytest -v -s --alluredir="[path]"CONTL_Website_Tests\CONTL_ ... - press tab for autocomplete
-[path] = Allure_Reports
-2. save report dir path, or open cmd in the directory with the report dir
-3. run command: allure serve [dir path] or allure serve [dir with report name]
+ [path] = Allure_Reports
+3. save report dir path, or open cmd in the directory with the report dir
+4. run command: allure serve [dir path] or allure serve [dir with report name]
