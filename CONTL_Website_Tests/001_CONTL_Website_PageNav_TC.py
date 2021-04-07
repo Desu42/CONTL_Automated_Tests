@@ -1,9 +1,6 @@
-import pytest
 import allure
 from allure_commons.types import AttachmentType
 from selenium import webdriver
-# from selenium.common.exceptions import WebDriverException
-# from webdriver_manager.chrome import ChromeDriverManager
 
 
 @allure.severity(allure.severity_level.NORMAL)
@@ -11,6 +8,7 @@ class TestContinentalHomePage:
 
     base_url = "https://alexandrularion.github.io/hotel-continental/"
 
+    @allure.severity(allure.severity_level.BLOCKER)
     def test_load_home_page(self):
         self.driver = webdriver.Chrome()
         driver = self.driver
