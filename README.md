@@ -4,6 +4,9 @@ Automated testing scripts with selenium and pytest for Continental Hotel
 # Generated Allure Report
 
 Check it here -> # https://contl-allure-generated-report.netlify.app/
+![image](https://user-images.githubusercontent.com/70851317/114315450-c0ffd480-9b07-11eb-8ad0-3dc13d61e17d.png)
+![image](https://user-images.githubusercontent.com/70851317/114315469-cd842d00-9b07-11eb-8138-dbc15cd8c4ed.png)
+
 
 # Required installations
 - Java 8 or higher for Allure reports
