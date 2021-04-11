@@ -7,16 +7,16 @@ Check it here -> # https://contl-allure-generated-report.netlify.app/
 
 # Required installations
 - Java 8 or higher for Allure reports
-- Allure Framework
+- Allure Framework - https://docs.qameta.io/allure/#_installing_a_commandline
 
 # Python packages used
-- selenium
+- selenium - https://selenium-python.readthedocs.io/
 - pytest
 - allure-pytest
 
 # Considered Improvements 
 - Rewrite all tests using POM design pattern
-- Use webdriver-manager python package to programmatically set up webdriver at runtime
+- Use webdriver-manager python package to programmatically set up webdriver at runtime - https://pypi.org/project/webdriver-manager/
 
 # How to use 
 
