@@ -1,4 +1,4 @@
-# CONTL_Automated_Tests
+# Automated Tests for Continental hostel web app
 Automated testing scripts with selenium and pytest for Continental Hotel
 
 # Generated Allure Report
